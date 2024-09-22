@@ -1,0 +1,72 @@
+name: ai_scientist
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - jupyter
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - ipykernel
+  - numba
+  - tqdm
+  - tensorboard
+  - lightning
+  - py-xgboost-gpu
+  # Pytorch (combined libraries for PyTorch)
+  - torchvision
+  - torchaudio
+  - torchtext
+  - pytorch-cuda=11.8
+  # Pip packages
+  - pip
+  - pip:
+    # Common Libraries
+    - Cython
+    - apache-airflow
+    - jmespath
+    - pymysql
+    - colour
+    - jupyter_nbextensions_configurator
+    - papermill
+    - fastcore
+    - hydra-core
+    - jupyter_contrib_nbextensions
+    - pdfkit
+    - submitit
+    - shap
+    - lightgbm
+    - fastparquet
+    - plotly
+    - tables
+    - catboost
+    - wandb
+    # Deep Learning Library
+    - einops
+    - opt_einsum
+    - jax[cuda11_pip] --find-links=https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+    - flax
+    - optax
+    - keras
+    - keras-nlp
+    - keras-cv
+    # LLM APIs
+    - anthropic
+    - aider-chat
+    - backoff
+    - openai
+    # LLM Library
+    - sentencepiece
+    - transformers
+    - tokenizers
+    - langchain
+    - tiktoken
+    # Visualization
+    - pypdf
+    - pymupdf4llm
